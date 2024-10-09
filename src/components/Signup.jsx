@@ -49,6 +49,10 @@ function Signup() {
         setLoading(false)
       }
   } 
+
+  const login = () => {
+        navigate('/login)
+  }
   return (
 
     <div className='row justify-content-center mt-10'>
@@ -57,7 +61,7 @@ function Signup() {
         <div className='bs mt-5'>
         {error && <Error message={"Please fill All the fields"} />}
         <h1>Register !!</h1>
-        <p style={{marginLeft:'8px',fontSize:"19px",}}>Already Registered? <a href='/login'>Login</a></p>
+        <p style={{marginLeft:'8px',fontSize:"19px",}}>Already Registered? <a className='pointer' onClick={()=>login()}>Login</a></p>
 
       <Form>
       <Form.Group className="mb-3">
