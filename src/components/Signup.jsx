@@ -51,7 +51,7 @@ function Signup() {
   } 
 
   const login = () => {
-        navigate('/login)
+        navigate('/login')
   }
   return (
 
