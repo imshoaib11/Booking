@@ -85,7 +85,7 @@ function Login() {
       
       <p style={{marginLeft:'8px',fontSize:"19px",}}>New User? <a className='pointer' onClick={()=>signIn()}>Register</a></p>
      
-      <p style={{marginLeft:'8px',fontSize:"19px"}}>Forgot Password? <a style={{color:"green"}} className='pointer' onClick={()=>forgotPassword}>Click here</a></p>
+      <p style={{marginLeft:'8px',fontSize:"19px"}}>Forgot Password? <a style={{color:"green"}} className='pointer' onClick={()=>forgotPassword()}>Click here</a></p>
     </Form>
 
     </div>
