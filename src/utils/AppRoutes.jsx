@@ -42,8 +42,7 @@ export default [
     {
         path:'/admin',
         element:<ProtectedRoutes><AdminPanel/></ProtectedRoutes>
-    }
-    
+    },
     {
         path:'*',
         element: <Navigate to= '/login' />
