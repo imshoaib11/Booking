@@ -5,7 +5,9 @@
 .mt-52{
   margin-left: 52px
 }
-
+.pointer{
+ cursor: pointer;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: white;
