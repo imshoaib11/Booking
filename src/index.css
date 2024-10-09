@@ -70,6 +70,7 @@ body.black-background {
 
 .navbar-brand{
   color: #f5f5f5 !important;
+  cursor: pointer;
 }
 
 .navbar-nav{
