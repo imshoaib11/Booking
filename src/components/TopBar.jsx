@@ -17,14 +17,19 @@ function TopBar() {
         sessionStorage.removeItem('userId')
         navigate('/login')
     }
+    const dashBoard = () => {
+      navigate('/dashboard')
+    }
+
+    const profile = () => {
+      navigate('/profile')
+    }
   return <>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/dashboard">ABC Rooms</a>
+    <a className="navbar-brand" onClick={()=>dashBoard()}>ABC Rooms</a>
     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link" aria-current="page" href="/dashboard">Home</a>
-        </li>
+        
     </ul>
     {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"><i className="fa-solid fa-bars" style={{color: "#f5f5f5;"}}></i></span>
@@ -40,7 +45,7 @@ function TopBar() {
                 </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item href='/profile'>Profile</Dropdown.Item>
+                            <Dropdown.Item onClick={()=>profile()}>Profile</Dropdown.Item>
                             <Dropdown.Item onClick={()=>handleLogout()}>Log Out</Dropdown.Item>
                         </Dropdown.Menu>
                         </Dropdown>
