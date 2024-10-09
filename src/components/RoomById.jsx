@@ -77,7 +77,7 @@ function RoomById() {
     //             {authenticate:ApiRoutes.NEWBOOKING.auth}
                 
     //         )
-    //         swal('Congratulations','Your Room is Booked Successfully','success').then(data=>navigate('/profile'))
+    //         swal('Congratulations','Your Room is Booked Successfully','success').then(data=>{navigate('/profile')})
             
     //     } catch (error) {
     //         swal('Oops','Something Went Wrong','error')
