@@ -8,7 +8,7 @@ export default {
         auth:false
     },
     SENDLINK:{
-        path:'/sendlink',
+        path:'/user/sendlink',
         auth:false
     },
     VERIFYKEY:{
