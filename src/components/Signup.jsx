@@ -86,7 +86,10 @@ function Signup() {
 
       <Form.Group className="mb-3">
         <Form.Label></Form.Label>
-        <Form.Control type="phone" placeholder="Role" onChange={(e)=>setRole(e.target.value)}/>
+        <select value={type} onChange={(e)=>(e.target.value)}>
+            <option value='Admin'>Admin</option>
+            <option value='User'>User</option>
+        </select>
       </Form.Group>
 
       
