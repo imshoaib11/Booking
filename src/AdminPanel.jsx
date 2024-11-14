@@ -11,6 +11,7 @@ import swal from 'sweetalert';
 function AdminPanel() {
 
     const { TabPane } = Tabs;
+    let navigate = useNavigate()
   return <>
     <TopBar/>
     <div className='mt-3 ml-3 mr-3 bs '>
@@ -254,7 +255,7 @@ export function AddRooms() {
                 address,
                 description
             },{authenticate:ApiRoutes.NEWROOMS.auth})
-            swal('Congratulations','Your Room is Added Successfully','success').then(data=>{window.location.reload()})
+            swal('Congratulations','Your Room is Added Successfully','success').then(data=>{navigate('/admin')})
             
         }
         catch(error){
@@ -284,7 +285,10 @@ export function AddRooms() {
 
       <Form.Group className="mb-3">
         <Form.Label></Form.Label>
-        <Form.Control type="text" placeholder="Delux or Non Delux" value={roomType} onChange={(e)=>setType(e.target.value)} />
+         <select  value={roomType} onChange={(e)=>setType(e.target.value)}>
+            <option value='Delux'>Delux</option>
+            <option value='non-Delux'>Non-Delux</option>
+        </select>
       </Form.Group>
 
       <Form.Group className="mb-1">
