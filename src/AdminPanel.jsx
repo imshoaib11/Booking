@@ -286,7 +286,7 @@ export function AddRooms() {
 
       <Form.Group className="mb-3">
         <Form.Label></Form.Label>
-         <select  value={roomType} onChange={(e)=>setType(e.target.value)}>
+         <select  value={roomType} style={{width:"100%",marginTop:2px,height:5px}} onChange={(e)=>setType(e.target.value)}>
             <option value='Delux'>Delux</option>
             <option value='non-Delux'>Non-Delux</option>
         </select>
