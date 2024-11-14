@@ -66,8 +66,7 @@ export function MyBookings(){
   const cancelBookings = async(bookingId,roomId)=>{
       try{
         const {data,message} = await AxiosService.post(ApiRoutes.CANCELBOOKINGS.path,{bookingId,roomId},{authenticate:ApiRoutes.CANCELBOOKINGS.auth})
-        toast.success(message)
-        window.location.reload()        
+        toast.success(message)       
       }
       catch(error){
         toast.error(error)
