@@ -276,7 +276,7 @@ export function AddRooms() {
 
        <Form.Group className="mb-1">
         <Form.Label></Form.Label>
-        <Form.Control type="text" placeholder="Location" value={roomLocation} onChange={(e)=>setLocation(e.target.value)} />
+        <Form.Control type="text" placeholder="City" value={roomLocation} onChange={(e)=>setLocation(e.target.value)} />
       </Form.Group>
 
       <Form.Group className="mb-1">
@@ -284,9 +284,9 @@ export function AddRooms() {
         <Form.Control type="text" placeholder="Amenities" value={amenities} onChange={(e)=>setAmenities(e.target.value)} />
       </Form.Group>
 
-      <Form.Group className="mb-3">
+      <Form.Group >
         <Form.Label></Form.Label>
-         <select  value={roomType} style={{width:"100%",marginTop:"2px",height:"45px"}} onChange={(e)=>setType(e.target.value)}>
+         <select  value={roomType} style={{width:"100%",marginTop:"15px",height:"45px"}} onChange={(e)=>setType(e.target.value)}>
             <option value='Delux'>Delux</option>
             <option value='non-Delux'>Non-Delux</option>
         </select>
