@@ -87,7 +87,7 @@ function Signup() {
       <Form.Group className="mb-3">
         <Form.Label></Form.Label>
         <select value={role} style={{width:"100%",height:"50px"}} onChange={(e)=>setRole(e.target.value)}>
-            <option value='Admin'></option>
+            <option value='Admin'>Role</option>
             <option value='Admin'>Admin</option>
             <option value='User'>User</option>
         </select>
